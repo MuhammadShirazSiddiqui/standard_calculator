@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <section class="container">
+        
+           <div class="table-responsive-sm ">
+                
+            <table class="table table-bordered bg-dark text-light font-weight-bold" style="text-align:center; ">
+                <tbody>
+                    <tr>
+                      <!-- <h1>Calculator</h1> -->
+                      <h3>Standard Calculator </h3>
+                    </tr>
+                    <tr >
+                        <input id="result" class="result" type="text" style="width: 100%; height: 100px; background-color: #1F1F1F; color:white; font-size: 36px; font-weight:bold">
+                    </tr>
+                    <tr>
+                        <td class="operator" onclick="clearResult()" colspan="3">C</td>
+                        <td class="operator" onclick="getNumber('/')">/</td>
+                      </tr>
+                  <tr>
+                    <td onclick="getNumber('7')">7</td>
+                    <td onclick="getNumber('8')">8</td>
+                    <td onclick="getNumber('9')">9</td>
+                    <td onclick="getNumber('*')" class="operator">x</td>
+                  </tr>
+                  <tr>
+                    <td onclick="getNumber('4')">4</td>
+                    <td onclick="getNumber('5')">5</td>
+                    <td onclick="getNumber('6')">6</td>
+                    <td onclick="getNumber('-')" class="operator">-</td>
+                  </tr>
+                  <tr>
+                    <td onclick="getNumber('1')">1</td>
+                    <td onclick="getNumber('2')">2</td>
+                    <td onclick="getNumber('3')">3</td>
+                    <td onclick="getNumber('+')" class="operator">+</td>
+                  </tr>
+                  <tr>
+                    <td onclick="getNumber('0')" colspan="3">0</td>
+                    <td onclick="getResult()" class="equals">=</td>
+                  </tr>
+                </tbody>
+              </table>
+           </div>
+    </section>
+</body>
+</html>
