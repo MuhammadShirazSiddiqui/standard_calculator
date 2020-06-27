@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+table{
+    border:solid 2px black !important;
+}
 
 tr{
 
@@ -26,8 +29,9 @@ td:hover{
     margin-top: 10px;
 }
 input{
-    direction: rtl;
+    /* direction: rtl;
     color: transparent !important;
-    text-shadow: 0px 0px 0px rgb(241, 239, 239);
+    text-shadow: 0px 0px 0px rgb(241, 239, 239); */
+    text-align: right;
 }
 
